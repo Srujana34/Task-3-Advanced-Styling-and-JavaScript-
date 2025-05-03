@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Event Organizer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Event Organizer</h1>
+    <p>Plan and explore your events effortlessly</p>
+  </header>
+
+  <nav class="navbar">
+    <a href="#">Home</a>
+    <a href="#">Events</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <main class="container">
+
+    <!-- Horizontal Events -->
+    <section>
+      <h2>🎭 Upcoming Events</h2>
+      <div class="events-grid-horizontal">
+        <div class="event">
+          <h3>Music Concert</h3>
+          <p>Date: May 25, 2025</p>
+        </div>
+        <div class="event">
+          <h3>Art Exhibition</h3>
+          <p>Date: June 10, 2025</p>
+        </div>
+        <div class="event">
+          <h3>Tech Conference</h3>
+          <p>Date: July 5, 2025</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quiz -->
+    <section class="quiz-section">
+      <h2>🎉 Event Enthusiast Quiz</h2>
+      <div id="quiz"></div>
+      <button onclick="submitQuiz()">Submit Answers</button>
+      <p id="quiz-result"></p>
+    </section>
+    
+    <!-- Carousel -->
+    <section class="carousel-section">
+      <h2>🌟 Featured Events</h2>
+      <div class="carousel">
+        <img id="carousel-image" src="product launch.jpeg" alt="Featured Event" />
+        <p id="carousel-title" class="carousel-title">Product Launch</p> <!-- Added -->
+    
+        <div class="carousel-buttons">
+          <button onclick="prevImage()">⬅️ Prev</button>
+          <button onclick="nextImage()">Next ➡️</button>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- Weather -->
+    <section>
+      <h2>📍 Check Weather at Your Event Location</h2>
+      <input type="text" id="cityInput" placeholder="Enter city name">
+      <button onclick="getWeather()">Get Weather</button>
+      <div class="weather-result" id="weatherResult"></div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Event Organizer. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
